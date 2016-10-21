@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket通信", "Socket通信\Socket通信.csproj", "{DB9F6646-60C8-4361-AB4D-79A6AED0DECC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket服务器端", "Socket通信\Socket服务器端.csproj", "{DB9F6646-60C8-4361-AB4D-79A6AED0DECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket客户端", "Socket客户端\Socket客户端.csproj", "{5CE14A8F-5990-47E5-9B5C-5B8FE71BC360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDemo", "ChatDemo\ChatDemo.csproj", "{3F656BFF-3229-417B-8DC2-59B58AC8E867}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DB9F6646-60C8-4361-AB4D-79A6AED0DECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB9F6646-60C8-4361-AB4D-79A6AED0DECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB9F6646-60C8-4361-AB4D-79A6AED0DECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE14A8F-5990-47E5-9B5C-5B8FE71BC360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE14A8F-5990-47E5-9B5C-5B8FE71BC360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE14A8F-5990-47E5-9B5C-5B8FE71BC360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE14A8F-5990-47E5-9B5C-5B8FE71BC360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F656BFF-3229-417B-8DC2-59B58AC8E867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F656BFF-3229-417B-8DC2-59B58AC8E867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F656BFF-3229-417B-8DC2-59B58AC8E867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F656BFF-3229-417B-8DC2-59B58AC8E867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

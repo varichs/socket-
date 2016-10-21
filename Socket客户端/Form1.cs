@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Socket通信
+namespace Socket客户端
 {
-    public partial class MainFrm : Form
+    public partial class mainFrm : Form
     {
-        public MainFrm()
+        public mainFrm()
         {
             InitializeComponent();
         }
