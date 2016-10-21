@@ -36,6 +36,7 @@
             this.txtMsg = new System.Windows.Forms.TextBox();
             this.IbPort = new System.Windows.Forms.Label();
             this.btnSendMsg = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnStart
@@ -107,11 +108,21 @@
             this.btnSendMsg.UseVisualStyleBackColor = true;
             this.btnSendMsg.Click += new System.EventHandler(this.btnSendMsg_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(506, 416);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 18);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "dianqiwo@163.com";
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 452);
+            this.ClientSize = new System.Drawing.Size(713, 452);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSendMsg);
             this.Controls.Add(this.IbPort);
             this.Controls.Add(this.txtMsg);
@@ -137,5 +148,6 @@
         private System.Windows.Forms.TextBox txtMsg;
         private System.Windows.Forms.Label IbPort;
         private System.Windows.Forms.Button btnSendMsg;
+        private System.Windows.Forms.Label label1;
     }
 }

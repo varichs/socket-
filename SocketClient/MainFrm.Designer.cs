@@ -36,6 +36,7 @@
             this.txtIP = new System.Windows.Forms.TextBox();
             this.lbIP = new System.Windows.Forms.Label();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSendMsg
@@ -107,11 +108,21 @@
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(499, 411);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 18);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "dianqiwo@163.com";
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 438);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSendMsg);
             this.Controls.Add(this.IbPort);
             this.Controls.Add(this.txtMsg);
@@ -137,5 +148,6 @@
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Label lbIP;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Label label1;
     }
 }
