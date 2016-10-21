@@ -38,6 +38,10 @@ namespace ChatDemo
         
 
         }
+        /// <summary>
+        /// 接受客户端的连接请求
+        /// </summary>
+        /// <param name="socket"></param>
         public void AcceptClientConnect(object socket)
         {
             var serverSocket = socket as Socket;
@@ -72,6 +76,7 @@ namespace ChatDemo
                     //异常退出
                     AppendTextToTxtLog(string.Format("客户端：{0}异常退出", proxSocket.RemoteEndPoint.ToString()));
                     ClientProxSocketList.Remove(proxSocket);
+                    StopConnect(proxSocket);
                     return;//线程结束
                 }
                 
@@ -80,6 +85,7 @@ namespace ChatDemo
                 {
                     AppendTextToTxtLog(string.Format("客户端：{0}正常退出", proxSocket.RemoteEndPoint.ToString()));
                     ClientProxSocketList.Remove(proxSocket);
+                    StopConnect(proxSocket);
                     return;//线程结束
                 }
 
@@ -88,6 +94,27 @@ namespace ChatDemo
             }
         }
 
+        private void StopConnect(Socket proxSocket)
+        {
+            try
+            {
+                if (proxSocket.Connected)
+                {
+                    proxSocket.Shutdown(SocketShutdown.Both);
+                    proxSocket.Close(100);
+                }
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+        /// <summary>
+        /// 将客户端发来的信息显示到输出框
+        /// </summary>
+        /// <param name="txt"></param>
         public void AppendTextToTxtLog(string txt)
         {
             if (txtLog.InvokeRequired)
