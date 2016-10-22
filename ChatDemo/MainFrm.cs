@@ -93,7 +93,10 @@ namespace ChatDemo
                 AppendTextToTxtLog(string.Format("接收到客户端：{0}的消息：{1}",proxSocket.RemoteEndPoint.ToString(),str));
             }
         }
-
+        /// <summary>
+        /// 断开连接
+        /// </summary>
+        /// <param name="proxSocket"></param>
         private void StopConnect(Socket proxSocket)
         {
             try

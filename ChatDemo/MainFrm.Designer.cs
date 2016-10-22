@@ -132,7 +132,7 @@
             this.Controls.Add(this.lbIP);
             this.Controls.Add(this.btnStart);
             this.Name = "MainFrm";
-            this.Text = "MainFrm";
+            this.Text = "服务器端";
             this.ResumeLayout(false);
             this.PerformLayout();
 

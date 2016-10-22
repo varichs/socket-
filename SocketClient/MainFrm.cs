@@ -118,5 +118,10 @@ namespace SocketClient
                 ClientSocket.Send(data, 0, data.Length, SocketFlags.None);
             }
         }
+
+        private void MainFrm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopConnect();
+        }
     }
 }

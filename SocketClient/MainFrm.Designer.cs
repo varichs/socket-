@@ -133,6 +133,7 @@
             this.Controls.Add(this.btnConnect);
             this.Name = "MainFrm";
             this.Text = "客户端";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
